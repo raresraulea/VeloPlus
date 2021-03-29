@@ -1,168 +1,215 @@
 <!DOCTYPE html>
 <html>
-   <head>
-       <meta charset="utf-8">
-       <meta name="author" content="Zeno">
-       <meta name="keywords" content="velo magazin biciclete blog">
-       <meta name="description" content="Blogul pasionatilor de biciclete din Sibiu">
-       <title>VeloPlus</title>
-       <link href="main.css" rel="stylesheet">
-       <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-   </head>
-   <body>
-       <header class="header">
-           <a href="/" class="header__logo">
-               <img src="https://via.placeholder.com/170x60?text=Logo" alt="Logo VeloPlus" width="170" height="60">
-           </a>
-           <nav class="header__nav">
-               <ul class="nav__wrapper">
-                   <li class="nav__item">
-                       <a href="#" class="nav__link">
-                           Biciclete
-                       </a>
-                   </li>
-                   <li class="nav__item">
-                       <a href="#" class="nav__link">
-                           Piese bicicletă
-                       </a>
-                   </li>
-                   <li class="nav__item">
-                       <a href="#" class="nav__link">
-                           Accesorii bicicletă
-                       </a>
-                   </li>
-                   <li class="nav__item">
-                       <a href="#" class="nav__link">
-                           Echipamente
-                       </a>
-                   </li>
-                   <li class="nav__item">
-                        <a href="#" class="nav__link">
-                            <form class="nav__item--form">
-                                <input class="nav__item--input" type="search">
-                                <button name="submit" class="nav__item--button">
-                                    <span class="fas fa-search"></span>
-                                </button>
-                            </form>
-                        </a>
-                </li>
-                   <li class="nav__item">
-                       <a href="#" class="nav__link--button">
-                           Oferte
-                       </a>
-                   </li>
-               </ul>
-           </nav>
-       </header>
-       <main class="main">
-           <article class="main__article article">
-               <header class="article__header">
-                   <h1 class="article__title">Titlu blog post</h1>
-                   <span class="article__meta">Scris de Tudor Popa în <time datetime="2021-03-29">29.03.2021</time></span>
-               </header>
-               <div class="article__content">
-                   <h2>Heading 2</h2>
-                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur amet labore sapiente unde pariatur reiciendis provident doloremque assumenda beatae aspernatur omnis nulla in saepe porro similique ipsam inventore, neque cumque?. Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="#">Link example</a>. Quae, facere nobis blanditiis ullam eligendi amet recusandae iste ab praesentium vitae dolorum quibusdam corrupti magni saepe similique atque rem tempora impedit.</p>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum perspiciatis nam, aliquid magnam perferendis excepturi ad, doloribus dolorem iure minima dolor molestias. Nihil impedit, vel facilis repudiandae enim doloremque ex.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quaerat tempore possimus nam! Dignissimos, in esse? Deserunt inventore ex totam vero repudiandae. Consectetur saepe ex, cupiditate earum animi reprehenderit dolores.</p>
-                   <blockquote class="article__content--blockq">
-                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque doloremque aperiam explicabo voluptatem dicta. Similique aut illo, at nulla totam iusto sapiente dicta, nisi expedita placeat optio. Id, recusandae nostrum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum nam fugit dicta laboriosam nostrum explicabo sunt adipisci.</p>
-                       <cite class="blockquote__cite">
-                           <p>"</p>
-                           <p class="cite__author">John Doe</p>
-                        </cite>
-                   </blockquote>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ad porro cupiditate sequi odit nam doloribus magnam magni eaque consectetur unde adipisci veniam praesentium, rerum aspernatur sit quis laborum ut! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, similique tempora molestias suscipit modi impedit nemo voluptas. Magnam corrupti maiores quo delectus. Ratione, deleniti? Eius et quisquam exercitationem ad similique.</p>
-                   <img class="article__content--img" src="https://via.placeholder.com/725x375?text=Article+Image" alt="Placeholder Image" width="725" height="375">
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, similique tempora molestias suscipit modi impedit nemo voluptas. Magnam corrupti maiores quo delectus. Ratione, deleniti? Eius et quisquam exercitationem ad similique.</p>
-               </div>
-           </article>
-       </main>
-       <aside class="related">
-           <h3 class="related__title">Alte articole relevante</h3>
-           <section class="related__wrapper">
-               <article class="related__item item">
-                   <a href="#" class="item__link">
-                       <h4 class="item__title">
-                           Titlu articol sportiv
-                       </h4>
-                   </a>
-               </article>
-               <article class="related__item item">
-                   <a href="#" class="item__link">
-                       <h4 class="item__title">
-                           Alt titlu articol sportiv pe trei randuri
-                       </h4>
-                   </a>
-               </article>
-               <article class="related__item item">
-                   <a href="#" class="item__link">
-                       <h4 class="item__title">
-                           Încă un titlu articol sportiv pe trei randuri sau chiar mai mult de 3 randuri
-                       </h4>
-                   </a>
-               </article>
-           </section>
-           <a href="#" class="related__action">Vezi toate articolele</a>
-       </aside>
-       <footer class="footer">
-           <div class="footer__social social">
-               <ul class="social__wrapper">
-                   <li class="social__item">
-                       <img src="https://via.placeholder.com/130x35?text=Facebook" alt="Logo of Facebook" width="130" height="35" class="social__image">
-                   </li>
-                   <li class="social__item">
-                       <img src="https://via.placeholder.com/105x35?text=Twitter" alt="Logo of Twitter" width="105" height="35" class="social__image">
-                   </li>
-               </ul>
-           </div>
-           <div class="footer__nav nav-secondary">
-               <ul class="nav-secondary__wrapper">
-                   <li class="nav-secondary__item">
-                       <a href="#" class="nav-secondary__link">
-                           Biciclete
-                       </a>
-                   </li>
-                   <li class="nav-secondary__item">
-                       <a href="#" class="nav-secondary__link">
-                           Piese bicicletă
-                       </a>
-                   </li>
-                   <li class="nav-secondary__item">
-                       <a href="#" class="nav-secondary__link">
-                           Accesorii bicicletă
-                       </a>
-                   </li>
-                   <li class="nav-secondary__item">
-                       <a href="#" class="nav-secondary__link">
-                           Echipamente
-                       </a>
-                   </li>
-                   <li class="nav-secondary__item">
-                       <a href="#" class="nav-secondary__link">
-                           About
-                       </a>
-                   </li>
-                   <li class="nav-secondary__item">
-                       <a href="#" class="nav-secondary__link">
-                           Blog
-                       </a>
-                   </li>
-                   <li class="nav-secondary__item">
-                       <a href="#" class="nav-secondary__link">
-                           Întrebări frecvente
-                       </a>
-                   </li>
-                   <li class="nav-secondary__item">
-                       <a href="#" class="nav-secondary__link">
-                           Contact
-                       </a>
-                   </li>
-               </ul>
-           </div>
-           <div class="footer__copyright">
-               <img src="https://via.placeholder.com/100x50?text=Logo" alt="Logo of VeloPlus" width="160" height="50" class="footer__logo">
-               <span class="footer__text">Copyright VeloPlus &copy; 2021</span>
-           </div>
-       </footer>
-   </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Zeno" />
+    <meta name="keywords" content="velo magazin biciclete blog" />
+    <meta
+      name="description"
+      content="Blogul pasionatilor de biciclete din Sibiu"
+    />
+    <title>VeloPlus</title>
+    <link href="main.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="/" class="header__logo">
+        <img
+          src="https://via.placeholder.com/170x60?text=Logo"
+          alt="Logo VeloPlus"
+          width="170"
+          height="60"
+        />
+      </a>
+      <nav class="header__nav">
+        <ul class="nav__wrapper">
+          <li class="nav__item">
+            <a href="#" class="nav__link"> Biciclete </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link"> Piese bicicletă </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link"> Accesorii bicicletă </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link"> Echipamente </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <form class="nav__form">
+                <input class="nav__input" type="search" />
+                <button name="submit" type="submit" class="nav__button">
+                  <span class="fas fa-search"></span>
+                </button>
+              </form>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link--button"> Oferte </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <article class="main__article article">
+        <header class="article__header">
+          <h1 class="article__title">Titlu blog post</h1>
+          <span class="article__meta"
+            >Scris de Tudor Popa în
+            <time datetime="2021-03-29">29.03.2021</time></span
+          >
+        </header>
+        <div class="article__content">
+          <h2>Heading 2</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+            amet labore sapiente unde pariatur reiciendis provident doloremque
+            assumenda beatae aspernatur omnis nulla in saepe porro similique
+            ipsam inventore, neque cumque?. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. <a href="#">Link example</a>. Quae,
+            facere nobis blanditiis ullam eligendi amet recusandae iste ab
+            praesentium vitae dolorum quibusdam corrupti magni saepe similique
+            atque rem tempora impedit.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            perspiciatis nam, aliquid magnam perferendis excepturi ad, doloribus
+            dolorem iure minima dolor molestias. Nihil impedit, vel facilis
+            repudiandae enim doloremque ex.. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Dolores quaerat tempore possimus nam!
+            Dignissimos, in esse? Deserunt inventore ex totam vero repudiandae.
+            Consectetur saepe ex, cupiditate earum animi reprehenderit dolores.
+          </p>
+          <blockquote class="article__blockquote">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              doloremque aperiam explicabo voluptatem dicta. Similique aut illo,
+              at nulla totam iusto sapiente dicta, nisi expedita placeat optio.
+              Id, recusandae nostrum. Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Ipsum nam fugit dicta laboriosam nostrum
+              explicabo sunt adipisci.
+            </p>
+            <cite class="blockquote__cite"> John Doe </cite>
+          </blockquote>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ad porro
+            cupiditate sequi odit nam doloribus magnam magni eaque consectetur
+            unde adipisci veniam praesentium, rerum aspernatur sit quis laborum
+            ut! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio,
+            similique tempora molestias suscipit modi impedit nemo voluptas.
+            Magnam corrupti maiores quo delectus. Ratione, deleniti? Eius et
+            quisquam exercitationem ad similique.
+          </p>
+          <img
+            class="article__img"
+            src="https://via.placeholder.com/725x375?text=Article+Image"
+            alt="Placeholder Image"
+            width="725"
+            height="375"
+          />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio,
+            similique tempora molestias suscipit modi impedit nemo voluptas.
+            Magnam corrupti maiores quo delectus. Ratione, deleniti? Eius et
+            quisquam exercitationem ad similique.
+          </p>
+        </div>
+      </article>
+    </main>
+    <aside class="related">
+      <h3 class="related__title">Alte articole relevante</h3>
+      <section class="related__wrapper">
+        <article class="related__item item">
+          <a href="#" class="item__link">
+            <h4 class="item__title">Titlu articol sportiv</h4>
+          </a>
+        </article>
+        <article class="related__item item">
+          <a href="#" class="item__link">
+            <h4 class="item__title">
+              Alt titlu articol sportiv pe trei randuri
+            </h4>
+          </a>
+        </article>
+        <article class="related__item item">
+          <a href="#" class="item__link">
+            <h4 class="item__title">
+              Încă un titlu articol sportiv pe trei randuri sau chiar mai mult
+              de 3 randuri
+            </h4>
+          </a>
+        </article>
+      </section>
+      <a href="#" class="related__action">Vezi toate articolele</a>
+    </aside>
+    <footer class="footer">
+      <div class="footer__social social">
+        <ul class="social__wrapper">
+          <li class="social__item">
+            <img
+              src="https://via.placeholder.com/130x35?text=Facebook"
+              alt="Logo of Facebook"
+              width="130"
+              height="35"
+              class="social__image"
+            />
+          </li>
+          <li class="social__item">
+            <img
+              src="https://via.placeholder.com/105x35?text=Twitter"
+              alt="Logo of Twitter"
+              width="105"
+              height="35"
+              class="social__image"
+            />
+          </li>
+        </ul>
+      </div>
+      <div class="footer__nav nav-secondary">
+        <ul class="nav-secondary__wrapper">
+          <li class="nav-secondary__item">
+            <a href="#" class="nav-secondary__link"> Biciclete </a>
+          </li>
+          <li class="nav-secondary__item">
+            <a href="#" class="nav-secondary__link"> Piese bicicletă </a>
+          </li>
+          <li class="nav-secondary__item">
+            <a href="#" class="nav-secondary__link"> Accesorii bicicletă </a>
+          </li>
+          <li class="nav-secondary__item">
+            <a href="#" class="nav-secondary__link"> Echipamente </a>
+          </li>
+          <li class="nav-secondary__item">
+            <a href="#" class="nav-secondary__link"> About </a>
+          </li>
+          <li class="nav-secondary__item">
+            <a href="#" class="nav-secondary__link"> Blog </a>
+          </li>
+          <li class="nav-secondary__item">
+            <a href="#" class="nav-secondary__link"> Întrebări frecvente </a>
+          </li>
+          <li class="nav-secondary__item">
+            <a href="#" class="nav-secondary__link"> Contact </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        <img
+          src="https://via.placeholder.com/100x50?text=Logo"
+          alt="Logo of VeloPlus"
+          width="160"
+          height="50"
+          class="footer__logo"
+        />
+        <span class="footer__text">Copyright VeloPlus &copy; 2021</span>
+      </div>
+    </footer>
+  </body>
 </html>
