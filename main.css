@@ -277,7 +277,7 @@ body {
     font-family: 'Font Awesome 5 Pro', 'Verdana', 'Times New Roman', sans-serif;
 }
 
-.article__img {
+.article__image {
     width: 100%;
     margin: 2em 0;
 }
@@ -421,7 +421,7 @@ body {
 
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1024px) {
     .related__wrapper {
         display: flex;
         flex-direction: column;
@@ -447,5 +447,9 @@ body {
     .nav__item,
     .nav__item:first-child {
         border: none;
+    }
+
+    .article__content {
+        width: 75%;
     }
 }
