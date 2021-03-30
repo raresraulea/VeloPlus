@@ -28,6 +28,103 @@ body {
     display: flex;
 }
 
+.nav__wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.nav__wrapper li {
+    list-style: none;
+}
+
+.nav__wrapper li a {
+    text-decoration: none;
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    border-radius: 2px;
+    background-color: rgb(226, 226, 226);
+    transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 1024px) {
+    .nav__wrapper {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        height: 92vh;
+        right: 0;
+        top: 8vh;
+        background-color: rgb(0, 0, 0);
+        transform: translateX(100%);
+    }
+
+    #overlay {
+        display: none;
+    }
+
+    .nav__wrapper li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+        padding: 15px;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(45deg) translate(7px, 11px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(-45deg) translate(0px, -6px);
+}
+
 .nav__item {
     height: 100%;
     display: flex;
@@ -111,8 +208,7 @@ body {
             rgba(0, 0, 0, 0.65),
             rgba(0, 0, 0, 0.95),
             rgba(0, 0, 0, 1)),
-        url('bycicle-bg2.jpg');
-
+        url("bycicle-bg2.jpg");
     min-height: 450px;
     color: #efefef;
     background-position: center;
@@ -150,6 +246,7 @@ body {
     position: relative;
 }
 
+/* .article */
 .blockquote__cite {
     position: absolute;
     top: 3em;
@@ -223,8 +320,7 @@ body {
     min-height: 320px;
     padding: 10px 20px;
     border: 3px solid transparent;
-    background-image: url('https://via.placeholder.com/100x150?text=Article');
-
+    background-image: url("https://via.placeholder.com/100x150?text=Article");
 }
 
 .related__item:hover {
@@ -297,6 +393,11 @@ body {
     border-bottom: 1px solid #565656;
 }
 
+.nav-secondary__link {
+    color: #fff;
+    text-decoration: none;
+}
+
 .footer__copyright {
     background-color: #000;
 }
@@ -306,11 +407,6 @@ body {
     display: flex;
     list-style: none;
     justify-content: space-evenly;
-}
-
-.nav-secondary__link {
-    color: #fff;
-    text-decoration: none;
 }
 
 .footer__copyright {
@@ -345,27 +441,11 @@ body {
         margin: 20px 20px;
         min-height: 320px;
         padding: 10px 20px;
-        background-image: url('https://via.placeholder.com/100x150?text=Article');
-
-    }
-
-    .header,
-    .header__nav,
-    .nav__wrapper {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 10px 0;
+        background-image: url("https://via.placeholder.com/100x150?text=Article");
     }
 
     .nav__item,
     .nav__item:first-child {
         border: none;
-    }
-
-    .header__logo {
-        display: none;
     }
 }
