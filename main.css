@@ -111,7 +111,8 @@ body {
             rgba(0, 0, 0, 0.65),
             rgba(0, 0, 0, 0.95),
             rgba(0, 0, 0, 1)),
-        url("bycicle-bg2.jpg");
+        url('bycicle-bg2.jpg');
+
     min-height: 450px;
     color: #efefef;
     background-position: center;
