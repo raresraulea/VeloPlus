@@ -297,11 +297,6 @@ body {
     border-bottom: 1px solid #565656;
 }
 
-.nav-secondary__link {
-    color: #fff;
-    text-decoration: none;
-}
-
 .footer__copyright {
     background-color: #000;
 }
@@ -311,6 +306,11 @@ body {
     display: flex;
     list-style: none;
     justify-content: space-evenly;
+}
+
+.nav-secondary__link {
+    color: #fff;
+    text-decoration: none;
 }
 
 .footer__copyright {
