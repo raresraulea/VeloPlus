@@ -313,38 +313,80 @@ body {
 }
 
 .related__item {
+    box-sizing: border-box;
     position: relative;
     background-color: #fff;
     flex: 1;
-    transition: border 0.3s;
     margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     min-height: 320px;
     padding: 10px 20px;
-    border: 3px solid transparent;
-    background-image: url("https://via.placeholder.com/100x150?text=Article");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)),
+        url("card-bg1.jpg");
+    background-size: cover;
+    transition: background-image 0.5s ease-out;
+}
+
+.related__item::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: scale(0, 1);
+    transition: transform ease-out 350ms;
+}
+
+.related__item::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    transition: transform 350ms ease-out;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    transform: scale(1, 0);
+    /* transition: transform 350ms ease-out,
+     background-image 350ms ease-out; */
 }
 
 .related__item:hover {
-    border: 3px solid #2b76d3;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url("card-bg1.jpg");
+}
+
+.related__item:hover::before {
+    transform: scale(1.05, 1);
+}
+
+.related__item:hover::after {
+    transform: scale(1, 1.05);
 }
 
 .item__link {
     display: flex;
     align-items: flex-start;
-    position: absolute;
-    bottom: 0px;
-    left: 20px;
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
     font-weight: bolder;
     line-height: 28px;
     font-size: 26px;
-    padding-right: 10px;
+    padding: 5px;
 }
 
 .item__link h4 {
     margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .related__action {
