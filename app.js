@@ -22,4 +22,23 @@ const navigationSlideIn = () => {
     });
 }
 
+function modalClick() {
+    //Selectors
+    const modalContainer = document.querySelector('.modal');
+    const modalImage = document.querySelector('.modal__content');
+    const clickedImage = document.querySelector('.article__image');
+    const closeButton = document.querySelector('.modal__close');
+
+    //EventListeners
+    clickedImage.addEventListener('click', () => {
+        modalContainer.style.display = 'block';
+        modalImage.src = clickedImage.src;
+    })
+
+    closeButton.addEventListener('click', ()=>{
+        modalContainer.style.display = 'none';
+    })
+}
+
 navigationSlideIn();
+modalClick();
